@@ -1,0 +1,372 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  z-index: 1000;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo img {
+  width: 100px; /* Tamanho da logo */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  padding: 0px 40px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+nav ul li a:hover {
+  color: #3498db;
+}
+
+
+/* Home */
+/* Seção Hero 
+.hero {
+  background: url('https://th.bing.com/th/id/OIP.cqYos6XqfXqt_XPYy3w_twHaFj?rs=1&pid=ImgDetMain') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 150px 20px;
+}*/
+.home-section {
+  height: 100%;
+}
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: url('https://images.pexels.com/photos/919073/pexels-photo-919073.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6), -3px -3px 6px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  color: #ccc;
+}
+
+.hero .btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #ff6347;
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.hero .btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Carros em Destaque */
+/* Estilos para a seção de carros em promoção */
+.carros-destaque {
+  text-align: center;
+  padding: 50px 0;
+  background: linear-gradient(135deg, #04040c, #909094);
+}
+
+.carros-destaque h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #d3cbcb;
+}
+
+.carros-container {
+  display: flex;
+  justify-content: space-around;  /* Deixa os itens mais afastados */
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1200px; /* Aumenta o tamanho máximo do container */
+  margin: 0 auto; /* Centraliza o container */
+  padding: 0 20px; /* Adiciona um pequeno padding nas laterais */
+}
+
+.carro {
+  background-color: #cfc8c8;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;  /* Aumenta a largura dos cards */
+  transition: transform 0.3s ease;
+}
+
+.carro:hover {
+  transform: scale(1.05); /* Dá um efeito de aumento quando o mouse passa em cima */
+}
+
+.carro img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.carro h3 {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.carro .preco-antigo {
+  font-size: 1.2em;
+  color: #747272;
+  text-decoration: line-through;
+  margin-bottom: 10px;
+}
+
+.carro .preco-promocional {
+  font-size: 1.6em;
+  color: #131111;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.carro a {
+  text-decoration: none;
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.carro a:hover {
+  background-color: #2980b9;
+}
+
+
+/* Ofertas Especiais */
+.ofertas-especiais {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #d6ec09, #a5e94c);
+}
+
+.ofertas-especiais h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #131212;
+}
+
+.oferta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.oferta img {
+  width: 35%;
+  border-radius: 8px;
+  margin-left: 7%;
+}
+
+.oferta-info {
+  width: 35%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-right: 7%;
+}
+
+.oferta-info h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #34495e;
+}
+
+.oferta-info p {
+  font-size: 18px;
+  color: #7f8c8d;
+}
+
+.oferta-info a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #e67e22;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.oferta-info a:hover {
+  background-color: #d35400;
+}
+
+
+#depoimentos {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #1a0606, #860d0d);
+}
+
+.depoimentos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.depoimento {
+  background: linear-gradient(30deg, #888585, #909094);
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 250px;
+  text-align: center;
+}
+
+.depoimento img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.H22 {
+  font-size: 30px;
+  color: #c4bebe;
+}
+
+.depoimento p {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+
+h4 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #222;
+  
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+H2 {
+  font-size: 2em;
+  color: #3d55e0;
+  margin-bottom: 20px;
+}
+
+P {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  text-align: left;
+}
+
+form input,
+form textarea,
+form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+form button {
+  background-color: #0056b3;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #004494;
+}
+
+#contato, #agendamento {
+  margin-top: 40px;
+}
+@media (max-width: 768px) {
+  /* Ocultar o menu completo por padrão e mostrar o ícone */
+  nav ul.menu {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #333;
+      width: 100%;
+      flex-direction: column;
+      gap: 15px;
+      padding: 20px;
+  }
+
+  nav ul.menu li a {
+      padding: 10px 20px;
+  }
+
+  /* Exibir o ícone de menu */
+  .menu-icon {
+      display: block;
+  }
+
+  /* Exibir o menu quando o checkbox está marcado */
+  #menu-toggle:checked + .menu-icon + ul.menu {
+      display: flex;
+  }
+
+  .logo img {
+      width: 80px;
+  }
+}
